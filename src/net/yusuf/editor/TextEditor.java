@@ -116,7 +116,6 @@ public class TextEditor extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         String string = e.getActionCommand();
 
-
         if (string.equals("Cut")) {
             textArea.cut();
         } else if (string.equals("Copy")) {
