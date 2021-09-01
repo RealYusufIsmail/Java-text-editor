@@ -46,7 +46,7 @@ public class TextEditor extends JFrame implements ActionListener {
             //set metal look and feel
             UIManager.getSystemLookAndFeelClassName();
 
-            // Set theme to ocean
+            // Set theme to the native system
             MetalLookAndFeel.getInactiveSystemTextColor();
         }
         catch (Exception e) {
