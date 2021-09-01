@@ -45,10 +45,10 @@ public class TextEditor extends JFrame implements ActionListener {
 
         try {
             //set metal look and feel
-            UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
+            UIManager.getSystemLookAndFeelClassName();
 
             // Set theme to ocean
-            MetalLookAndFeel.setCurrentTheme(new OceanTheme());
+            MetalLookAndFeel.getInactiveSystemTextColor();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -208,7 +208,7 @@ public class TextEditor extends JFrame implements ActionListener {
         else if (string.equals("New")) {
             textArea.setText("");
         } else if (string.equals("Close")) {
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setVisible(false);
         }
     }
 }
