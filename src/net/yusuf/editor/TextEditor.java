@@ -99,16 +99,10 @@ public class TextEditor extends JFrame implements ActionListener {
         edit.add(copy);
         edit.add(paste);
 
-        //creates the option close in the menu bar
-        JMenuItem close = new JMenuItem("close");
-
-        close.addActionListener(this);
-
         //register all the options
         mb.add(file);
         mb.add(edit);
-        mb.add(close);
-
+        
         //this equals JFrame
         this.setJMenuBar(mb);
         this.add(textArea);
@@ -207,8 +201,6 @@ public class TextEditor extends JFrame implements ActionListener {
         }
         else if (string.equals("New")) {
             textArea.setText("");
-        } else if (string.equals("Close")) {
-            frame.setVisible(false);
         }
     }
 }
