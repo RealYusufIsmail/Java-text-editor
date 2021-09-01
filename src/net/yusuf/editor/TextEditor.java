@@ -41,12 +41,11 @@ public class TextEditor extends JFrame implements ActionListener {
 
     //Constructor
     TextEditor() {
-        frame = new JFrame("text editor");
+        frame = new JFrame("Yusuf's text editor");
 
         try {
             //set metal look and feel
             UIManager.getSystemLookAndFeelClassName();
-
             // Set theme to ocean
             MetalLookAndFeel.getInactiveSystemTextColor();
         } catch (Exception e) {
